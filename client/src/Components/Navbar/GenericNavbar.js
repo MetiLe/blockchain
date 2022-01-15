@@ -6,7 +6,7 @@ class GenericNavbar extends Component{
         return(
         <nav className="nav-wrapper grey darken-4 navbar">
             <div className="container">
-            <b><a href="/" className="brand-logo">Thadam</a></b>
+            <b><a href="/" className="brand-logo">Criminal Record</a></b>
                <ul className = "right">
                    <li><a href = "/police">Home</a></li>
                    <li><a href = "/">Log out</a></li>

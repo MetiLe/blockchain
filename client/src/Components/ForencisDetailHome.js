@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import ForensicDetail from './ForensicDetail'
+import ForensicDetail from './ForensicDetail.js'
 import GenericNavbar from './Navbar/GenericNavbar.js';
 
 class ForensicDetailHome extends Component 
 {
     render(){
+       
         return(
             <div>
                 <GenericNavbar/>
@@ -16,7 +17,7 @@ class ForensicDetailHome extends Component
                             <h6>Crime ID</h6>
                         </div>
                         <div className="col s3 white-text ">
-                            <h6>Offense Code</h6>
+                            <h6>exhibit code</h6>
                         </div>
                         <div className="col s3 white-text ">
                             <h6>Description</h6>

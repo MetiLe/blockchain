@@ -4,6 +4,7 @@ import CrimeScenePhotographs from './CrimeScenePhotographs';
 
 import SimpleStorageContract from "../contracts/ForensicContract.json";
 import getWeb3 from "../utils/getWeb3";
+import {browserHistory} from 'react-router';
 
 import ipfs from '../ipfs';
 
@@ -72,7 +73,8 @@ class ViewForensic extends Component
             //     return
             // }
             contract.methods.addReport(this.state.case_id, this.state.exhibit_name, this.state.desc, this.state.timestamp).send({ from: accounts[0] });
-    
+            browserHistory.push('/forensicDetail');
+            setTimeout(() => {window. location. reload()}, 6000);
             //})        
           }
     

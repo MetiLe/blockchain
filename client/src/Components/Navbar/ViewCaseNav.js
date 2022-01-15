@@ -3,13 +3,12 @@ import {Link} from 'react-router-dom'
 
 const ViewCaseNav = (props) => 
 {
-    var {crimeId} = props;
-    //var url = "/crimedata/forensics/"+crimeId;
+   
     return (
        
         <nav className="nav-wrapper grey darken-4 navbar">
             <div className="container">
-                <b><a href="/" className="brand-logo">Thadam</a></b>
+                <b><a href="/" className="brand-logo">Criminal record</a></b>
                 <ul className = "right">
                 <li><a href="/forensicDetail">FIR Details</a></li>
                 <li> <a href=""> Forensic Reports</a></li>

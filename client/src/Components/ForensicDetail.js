@@ -29,7 +29,7 @@ class List extends Component{
           const networkId = await web3.eth.net.getId();
           const deployedNetwork = ForensicContract.networks[networkId];
           const instance = new web3.eth.Contract(
-            SimpleStorageContract.abi,
+            ForensicContract.abi,
             deployedNetwork && deployedNetwork.address,
           );          
           // Set web3, accounts, and contract to the state, and then proceed with an
@@ -91,7 +91,7 @@ class List extends Component{
             {
                 var toLink = "forensicDetail" 
             return (
-                <Link to = {toLink}>
+                
 
                 <div className = "card" key = {arr.crime_id}>
                 <div className="row listItem" >
@@ -109,7 +109,7 @@ class List extends Component{
                         </div>
                     </div>
                 </div>
-                </Link>
+               
                 )
             })
         ):

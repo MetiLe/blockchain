@@ -4,6 +4,7 @@ import GenericNavbar from './Navbar/GenericNavbar';
 
 import SimpleStorageContract from "../contracts/SimpleStorage.json";
 import getWeb3 from "../utils/getWeb3";
+import {browserHistory} from 'react-router';
 
 class NewFIR extends Component
 {
@@ -54,6 +55,9 @@ class NewFIR extends Component
         event.preventDefault()
         this.onGetDate();
         contract.methods.addCrimeReport(this.state.crime_id, this.state.timestamp, this.state.offense_code, this.state.description).send({from: accounts[0]});
+        browserHistory.push('/police');
+        setTimeout(() => {window. location. reload()}, 6000);
+        
     }
 
     onGetDate() {

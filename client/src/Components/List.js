@@ -93,7 +93,7 @@ class List extends Component{
             return (
                 <Link to = {toLink}>
 
-                <div className = "card" key = {arr.crime_id}>
+                <div className = "card" key = {arr.crime_id} style={{padding:"1.5rem"}}>
                 <div className="row listItem" >
                         <div className="col s3 black-text">
                             <h6>{arr.crime_id}</h6>

@@ -56,26 +56,7 @@ class Login extends Component {
                       <input id="password" type="password" onChange={(evt) => { this.state.password =  evt.target.value; }}></input>
                       <label htmlFor="password">Password</label>
                   </div>
-                  <div className="input-field row">
-                      <p className="col s4">
-                          <label>
-                              <input name="dept" type = "radio" value = "police"/>
-                              <span>Police</span>
-                          </label>
-                      </p>
-                      <p className="col s4">
-                          <label>
-                              <input name="dept" type = "radio" value = "forensics"/>
-                              <span>Forensics</span>
-                          </label>
-                      </p>
-                      <p className="col s4">
-                          <label>
-                              <input name="dept" type = "radio" value = "hospital"/>
-                              <span>Hospital</span>
-                          </label>
-                      </p>
-                  </div>
+                  
                   <div className="input-field center card-action">
                       <button className="btn grey darken-3" onClick={this.validate}>Sign In!</button>
                   </div>
